@@ -2,6 +2,8 @@ configuration: Release
 
 before_build:
 	- nuget restore
+install:
+	- Install-Package YamlDotNet
 build:
 	verbosity: minimal
 	publish_wap: true
