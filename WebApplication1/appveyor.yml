@@ -1,6 +1,7 @@
 configuration: Release
 
 before_build:
+	- rd /s /q packages
 	- nuget restore
 build:
 	verbosity: minimal
